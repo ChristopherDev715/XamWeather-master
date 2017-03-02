@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:local="clr-namespace:MyAwesomeWeatherApp" 
+		x:Class="MyAwesomeWeatherApp.MyAwesomeWeatherAppPage"
+		BackgroundImage="drop.jpg">
+
+		<StackLayout Spacing="20" Padding="20"
+                         VerticalOptions="Center">
+                <Label Text="Awesome weather app"
+						TextColor="White"
+           				Font="Large"
+           				HorizontalOptions="Center"
+           				VerticalOptions="CenterAndExpand"/>
+				
+                <Entry Placeholder="Ex : London"
+						HorizontalTextAlignment="Center"
+                   		x:Name="entryCity"/>
+                
+                <Button Text="Search by city"
+						TextColor="White"
+						Clicked="launchSearchByCity"/>
+
+				<Label Text = "Or" 
+						TextColor="White"
+						Font="Bold"
+						HorizontalOptions="Center"
+           				VerticalOptions="CenterAndExpand"/>
+                
+                <Button Text="Search by location" 
+						TextColor="White"
+						Clicked="launchSearchByPosition"/>
+		
+            </StackLayout>
+
+</ContentPage>
